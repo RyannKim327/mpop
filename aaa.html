@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample</title>
+<meta name="viewport"  content="width=device-width, initial-scale=1, minimal-ui">
+<link rel="stylesheet" href=".web/mpop/styles.css">
+
+</head>
+<body onload="show('home');">
+<div class="mpop-base">
+<div class="mpop-head">
+<h3 class="monospace">Welcome to</h3>
+<h5 class="serif pl-10">MPOP Reverse II <label id="a"></label></h5>
+<div class="mpop-tabs">
+<ul>
+<li onclick="show('home');">Home</li>
+<li onclick="show('dev');">Developer</li>
+<li onclick="show('tac');">Terms and Condition</li>
+</ul>
+</div>
+<form class="mpop-login">
+<span class="mpop-input" id="uname">
+<input mpop-name="login" mpop-id1="uname" mpop-id2="pass" class="mpop-input-field" type="text" name="uname" placeholder="Username" mpop-length="8">
+</span>
+<span class="mpop-input" id="pass">
+<input mpop-name="login" mpop-id1="uname" mpop-id2="pass" class="mpop-input-field" type="password" name="pass" placeholder="Password" mpop-length="8">
+<mpop>
+<input type="submit" value="➡">
+</mpop>
+</span>
+</form>
+</div>
+<div class="mpop-body p-20">
+<span class="mpop-input" id="search">
+<input mpop-parent="search" mpop-name="single" id="name" type="text" name="name" placeholder="Search something" >
+<mpop>
+<input id="sbutton" type="button" class="mpop-search" onclick="search()">
+</mpop>
+</span>
+<fieldset class="mpop-field mpop-tabs-content" id="home">
+<legend>Home</legend>
+&emsp;We call this project as newbie designer, as still we are newbie. This design is inspired with Bootstrap's Panel. As also a practice to use gradients design, we decided to create a simple design that can be used by the newbies like us. Just enjoy using this, and read the following as basis.
+<br><br>
+<p>Class Names</p>
+<ul class="mpop-list">
+<li>mpop-base</li>
+- As base of the panel. Tag base &ltdiv&gt;
+<li>mpop-head</li>
+- Head or headings of the panel where you can add title and subtitles and tabs. Tag base  &ltdiv&gt;
+<li>mpop-body</li>
+- This is the body of the panel, where the contents are here. Tag base &ltdiv&gt;
+<li>mpop-foot</li>
+- This is the footer of the panel. Tag base &ltdiv&gt;
+<li>mpop-input</li>
+- This is where you can add input, like search boxes and logins. Tag base &ltspan&gt;<br>
+- Use &lt;mpop/&gt as line separator
+<li>mpop-tabs</li>
+- Tabs which is in listing method or using unordered list and list &lt;ul&gt; and &lt;li&gt;. Tag base &ltdiv&gt;
+<li>mpop-field</li>
+- This is designed for fieldset, which is the legend is automatically modified. Tag base &ltfieldset&gt;
+<li>mpop-list</li>
+- Designed for non-tabs listing. Tag based &ltul&gt; or &ltol&gt;
+</ul>
+</fieldset>
+<fieldset class="mpop-field mpop-tabs-content" id="dev">
+<legend>Developer</legend>
+&emsp;MPOP Reverse II is a small-group of newbie programmers from the Philippines. It is originally founded on 2016 and firat establiahed on 2017. MPOP or Master Piece of Paper name is came from a teacher named Joewel Anareta, as he gives an activity to create his students a master piece in a piece of paper.<br>
+&emsp;MPOP still doing what they can, but not their best.  As still the group following its main rule to help anonymously, they build the no credits policy to protect their identity and their agenda to help. Most of their projects are came from scratch, until they created a great work that can help to others.
+</fieldset>
+<fieldset class="mpop-field mpop-tabs-content" id="tac">
+<legend>Terms and Conditions</legend>
+Before messaging me for seeking help kindly follow this:
+<ul class="mpop-list">
+<li>Help others, for those who want to learn, and be a better coder and/or programmer, I wanna you to share your knowledge, this would be a great pleasure of mine.</li>
+<li>Never add and/or mention my name, from REAL ACCOUNT, up to DUMMIES, and also the HangDroid PH and MPOP Reverse II in any kind of platforms and media. Just give my name if they need help.</li>
+<li>Never give me any credits, instead do the first condition.</li>
+<li>Making me as an anonymous is a huge help for me, not to avoid them, but to avoid popularity.</li>
+<li>Thank me if you're done, or I'll helped you.</li>
+</ul>
+</fieldset>
+</div>
+<div class="mpop-foot" align="center">
+<h5 class="monospace">Developed under the name of MPOP Reverse II</h5>
+</div>
+</div>
+</body>
+<script src=".web/mpop/script.js"></script>
+<script type="text/javascript">
+document.getElementById("a").textContent = "| 2017 - "  + new Date().getFullYear();
+function search(){
+alert(document.getElementById("name").value);
+}
+</script>
+</html>
