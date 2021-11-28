@@ -1,0 +1,203 @@
+/*
+*
+* Developer: Ryann Kim Sesgundo
+* Organization: MPOP Reverse II
+* File name: styles.css
+*
+* Credits to the following
+*
+* John Roy Lapida Calimlim
+* Ronald Torrejos Limpiado
+* John Vincent Diaz
+* Renzo Lanes Barba
+* Jessa Sanchez
+* Rennier21
+* James Tinaya Alegre
+* JxClarynx
+* Isrrael Preak
+* John Jeremy Antiguo
+* Sanz Dinopol
+* Rovie Francisco
+* Mark Glen Miguel
+* Andrei Candelaria
+* Vugarishk Lagishuka
+* Fortzkie Tuneskie
+* Charles Tamao
+* Adrei Paul Tamayo
+* Dominic Ama
+* Nonie Del Rosario
+* Ian Divinagracia
+* Genesis Fernandez
+* Jason Francisco
+* Ronald Paolo Ramirez
+* Edward Fernandez
+* Joshua Agulto
+* Atcha Abe
+* Kyla Crisel Dela Cruz
+* Ricalyn Perriras
+* April Bauat
+* Mart Anthony Salazar
+* Artz Ayate Rase
+* Queens Pride
+* Jericho Cabaguing
+* Jonel Tapia
+* Criztian Jade Tuplano
+* Lloyd Samuel Garcia
+*
+* Geeks for Geeks
+* Tutorials Point
+* Stackoverflow
+* GitHub
+* DroidModificators
+* Fagmmmu
+* Android Modders United
+* Bisdak Developers Clan United
+* XDA-Developers
+* W3schools
+* PHCommunity
+* PinoyDen
+*
+* HTML Code Play
+* QuickEdit
+* AIDE
+*
+* Disclaimer: This is just created by MPOP Reverse II,
+* There is no copyrigth intension, if ever that this project
+* copied otther projects, Open for suggestions and idea, by
+* messaging me thru m.me/NOOBGrammer2001. This project
+* is a bootstrap inspired which is based on its panel classes.
+* In addition, I make this project as a readable code, and as
+* request, kindly don't change this comment as creditation
+* to the following, and consideration to the author itself.
+*
+*/
+*{
+font-variant: small-caps;
+background-color: transparent;
+margin: 0;
+padding: 0;
+border: 0;
+}
+body{
+background-color: #131313;
+color: #ffffff;
+}
+.mpop-base{
+border: 1px #999999 solid;
+border-radius: 10px;
+margin: 5px;
+}
+.mpop-head, .mpop-foot{
+border-radius: 10px;
+background-image: linear-gradient(to bottom, #131313 25%, #555555);
+padding: 10px;
+}
+.mpop-body{
+padding: 10px;
+}
+.serif{
+font-family: "Times New Roman", serif;
+}
+.monospace{
+font-family: "Courier New", monospace;
+}
+.pl-15{
+padding-left: 15px;
+}
+.p-20{
+padding: 20px;
+}
+.mpop-login{
+display: flex;
+flex-wrap: wrap;
+}
+.mpop-input{
+background-color: #555555;
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;
+margin-top: 8px;
+margin-bottom 8px;
+align-content: center;
+margin-left: 1px;
+margin-right: 1px;
+}
+.mpop-input input{
+color: #ffffff;
+font-family: "Times New Roman", serif;
+padding-left: 5px;
+padding-right: 5px;
+overflow: none;
+}
+.mpop-input input::placeholder{
+color: #dedede;
+font-family: "Times New Roman", serif;
+}
+.mpop-input input[type="button"],
+.mpop-input input[type="submit"],
+.mpop-input button{
+background-color: #ffffff;
+color: transparent;
+-webkit-background-clip: text;
+}
+.mpop-input mpop{
+display: none;
+}
+.mpop-input mpop:before{
+content: "| ";
+color: #ffffff;
+}
+.mpop-login .mpop-input{
+display: flex;
+width: 40%;
+}
+.mpop-login .mpop-input input{
+width: 100%;
+}
+.mpop-login .mpop-input input[type="button"],
+.mpop-login .mpop-input input[type="submit"],
+.mpop-login .mpop-input button{
+width: 70%;
+}
+.mpop-tabs{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.mpop-tabs ul, .mpop-tabs ol, .mpop-tabs li{
+display: flex;
+flex-wrap: wrap;
+margin-left: 3px;
+margin-right: 3px;
+user-select: none;
+}
+.mpop-tabs li{
+list-style: none;
+background-color: #555555;
+color: #ffffff;
+border-radius: 10px;
+text-align: center;
+padding-left: 8px;
+padding-right: 8px;
+}
+.mpop-tabs li:hover,
+.mpop-tabs li:focus{
+background-color: #aaaaaa;
+color: #000000;
+}
+.mpop-field, .mpop-field legend{
+border: 1px #959595 solid;
+border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.mpop-field{
+margin-top: 8px;
+margin-bottom 8px;
+}
+.mpop-field legend{
+margin-left: 15px;
+background-color: #131313;
+}
+.mpop-list{
+margin-left: 25px;
+}
